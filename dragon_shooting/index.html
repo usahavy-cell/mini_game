@@ -8,26 +8,32 @@
 </head>
 <body class="container py-4 bg-light" style="max-width: 600px;">
 
-    <!-- 1. 戻るボタン（ボタンっぽく整えました） -->
+    <!-- 戻るボタン -->
     <a href="../" class="btn btn-outline-secondary btn-sm mb-3">← ミニゲーム集に戻る</a>
 
-    <!-- 2. ホーム画面と合わせた白いカードの枠 -->
+    <!-- 白い枠でそれっぽく囲う -->
     <div class="card mb-3">
         <div class="card-body">
 
-            <!-- タイトルと作者情報 -->
-            <h1 class="card-title h4 mb-1">ドラゴンシューティング</h1>
+            <div class="d-flex justify-content-between align-items-center mb-1">
+                <!-- タイトル -->
+                <h1 class="h4 fw-bold mb-0">ドラゴンシューティング</h1>
+                <!-- 全画面ボタン -->
+                <a href="./game.html" target="_blank" class="btn btn-outline-primary btn-sm">全画面で遊ぶ</a>
+            </div>
+            
+            <!-- 作者名 -->
+            <p class="text-secondary small mb-3">作：作者名を入力</p>
 
-            <!-- 3. ゲーム画面（スマホで潰れないよう枠を付けました） -->
-            <div class="ratio ratio-4x3 mb-3">
-                <!-- ⚠️ 123456789 を実際の作品IDに変えてください -->
-                <iframe src="https://turbowarp.org/123456789/embed" allowfullscreen></iframe>
+            <!-- ゲーム画面 -->
+           <div class="ratio ratio-4x3 mb-3">
+                <iframe src="./game.html" allow="fullscreen" allowfullscreen></iframe>
             </div>
 
             <!-- 操作方法 -->
             <h2 class="h6 fw-bold">操作方法</h2>
-            <p class="card-text mb-0">操作方法を入力</p>
-
+            <p class="card-text mb-0">操作説明を入力</p>
+            
         </div>
     </div>
 
