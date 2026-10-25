@@ -1,34 +1,42 @@
 <!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="/libs/css/style.css" />
+    <script src="/libs/js/scripts.js" defer></script>
     <title>ミニゲーム集</title>
     <!-- BootstrapのCSSを読み込み -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="container py-4" style="max-width: 600px;">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--#include virtual="/libs/include/header.html" -->
+    <div class="pageinner contents container">
+      <!-- タイトル -->
+      <h1 class="text-center mb-4">ミニゲーム集</h1>
 
-    <!-- タイトル -->
-    <h1 class="text-center mb-4">ミニゲーム集</h1>
-
-    <!-- ゲーム 1 -->
-    <div class="card mb-3">
+      <!-- ゲーム 1 -->
+      <div class="card mb-3">
         <div class="card-body">
-            <h2 class="card-title h5">ドラゴンシューティング（未完成）</h2>
-            <p class="card-text">高難易度シューティングゲームです</p>
-            <a href="./dragon_shooting/" class="btn btn-primary">プレイする</a>
+          <h2 class="card-title h5">ドラゴンシューティング（未完成）</h2>
+          <p class="card-text">高難易度シューティングゲームです</p>
+          <div class="btnMore"><a href="./dragon_shooting/">プレイする</a></div>
         </div>
-    </div>
+      </div>
 
-    <!-- ゲーム 2（増やす時はこの card のカタマリをコピペするだけ） -->
-    <div class="card mb-3">
+      <!-- ゲーム 2（増やす時はこの card のカタマリをコピペするだけ） -->
+      <div class="card mb-3">
         <div class="card-body">
-            <h2 class="card-title h5">ごるふもどき</h2>
-            <p class="card-text">ゴルフのような操作で進んでいくゲームです</p>
-            <a href="./golf/" class="btn btn-primary">プレイする</a>
+          <h2 class="card-title h5">ごるふもどき</h2>
+          <p class="card-text">ゴルフのような操作で進んでいくゲームです</p>
+          <div class="btnMore"><a href="./golf/">プレイする</a></div>
         </div>
+      </div>
     </div>
-
-</body>
+    <!--#include virtual="/libs/include/footer.html" -->
+  </body>
 </html>
